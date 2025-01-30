@@ -7,6 +7,8 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
+    {{  'theme.css' | asset_url | stylesheet_tag }}
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -296,6 +298,10 @@
 
     {% sections 'header-group' %}
 
+    <div class="bg-orange-200 flex justify-center items-center h-96">
+      <h1 class="text-blue-950">Titulo aqui</h1> 
+    </div>
+    
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
