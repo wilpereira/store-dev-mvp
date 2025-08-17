@@ -20,10 +20,18 @@
             "text": "Welcome to our store",
             "link": ""
           }
+        },
+        "announcement_gpejce": {
+          "type": "announcement",
+          "settings": {
+            "text": "Boas-vindas à nossa loja",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_gpejce"
       ],
       "settings": {
         "color_scheme": "scheme-1",
