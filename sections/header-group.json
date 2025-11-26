@@ -30,7 +30,8 @@
         }
       },
       "block_order": [
-        
+        "announcement-bar-0",
+        "announcement_gpejce"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -63,7 +64,7 @@
     }
   },
   "order": [
-    "announcement-bar",
-    "header"
+    "header",
+    "announcement-bar"
   ]
 }
