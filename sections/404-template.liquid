@@ -1,0 +1,37 @@
+<div class="flex items-center justify-center mb-6 h-full">
+  {% comment %} {% if section.settings.not_found_image != blank %} {% endcomment %}
+    <div class="not-found-image">
+      <img src="{{ section.settings.not_found_image | img_url: '800x' }}" alt="{{ 'sections.404-template.not_found_image_alt' | t }}">
+    </div>
+  {% comment %} {% endif %} {% endcomment %}
+
+
+  <h1>{{ section.settings.title }}</h1>
+
+  <p>{{ section.settings.subtext }}</p>
+</div>
+
+{% schema %}
+  {
+    "name": "Template 404",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "Página não encontrada"
+      },
+      {
+        "type": "text",
+        "id": "subtext",
+        "label": "Texto",
+        "default": "A página que você está procurando não existe."
+      },
+      {
+        "type": "image_picker",
+        "id": "not_found_image",
+        "label": "Imagem da página 404"
+      }
+    ]
+  }
+{% endschema %}
