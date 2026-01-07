@@ -279,7 +279,8 @@
     },
     "404": {
       "title": "Página não encontrada",
-      "subtext": "404"
+      "subtext": "404",
+      "not_found_image_alt": "Imagem de página não encontrada"
     }
   },
   "sections": {

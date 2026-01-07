@@ -270,7 +270,8 @@
     },
     "404": {
       "title": "Page not found",
-      "subtext": "404"
+      "subtext": "404",
+      "not_found_image_alt": "Image for page not found"
     }
   },
   "sections": {
