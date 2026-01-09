@@ -13,8 +13,8 @@
     "main": {
       "type": "404-template",
       "settings": {
-        "title": "Página não encontrada",
-        "subtext": "A página que você está procurando não existe.",
+        "title": "Opa nada encontrado por aqui!!",
+        "subtext": "Veja se está correto!",
         "not_found_image": "shopify://shop_images/coffee-cup-icon.jpg"
       }
     }

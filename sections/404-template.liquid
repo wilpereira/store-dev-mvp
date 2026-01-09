@@ -1,5 +1,5 @@
 <div class="flex items-center justify-center mb-6 h-full">
-  {% if section.settings.not_found_image != blank %}
+  {% comment %} {% if section.settings.not_found_image != blank %} {% endcomment %}
     <div class="not-found-image">
       <img 
         src="{{ section.settings.not_found_image | image_url: width: 800 }}" 
@@ -8,7 +8,7 @@
         width="auto" 
       />
     </div>
-  {% endif %}
+  {% comment %} {% endif %} {% endcomment %}
 
 
   <h1>{{ section.settings.title }}</h1>
@@ -23,14 +23,12 @@
       {
         "type": "text",
         "id": "title",
-        "label": "Título",
-        "default": "Página não encontrada teste titulo"
+        "label": "Título aqui"
       },
       {
         "type": "text",
         "id": "subtext",
-        "label": "Texto",
-        "default": "A página que você está procurando não existe. teste subtexto"
+        "label": "Texto aqui"
       },
       {
         "type": "image_picker",
